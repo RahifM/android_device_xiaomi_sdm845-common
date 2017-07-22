@@ -185,6 +185,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_sdm845
 
+#ifeq ($(TARGET_BUILD_VARIANT),userdebug)
+# Matlog
+PRODUCT_PACKAGES += \
+    MatLog
+
+# Custom priv-app permission
+PRODUCT_COPY_FILES += \
+    device/xiaomi/sdm845-common/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
+#endif
+
 # Media
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \

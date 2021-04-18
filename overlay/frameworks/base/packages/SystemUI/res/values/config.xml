@@ -22,5 +22,9 @@
 <resources>
     <!-- Doze: does this device support STATE_DOZE?  -->
     <bool name="doze_display_state_supported">true</bool>
+
+    <!-- Launcher package name for overlaying icons. --> 
+    <string name="launcher_overlayable_package" translatable="false">com.google.android.apps.nexuslauncher</string>
+
 </resources>
 

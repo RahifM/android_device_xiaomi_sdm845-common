@@ -236,10 +236,12 @@ PRODUCT_COPY_FILES += \
 
 # Misc
 PRODUCT_PACKAGES += \
-    MatLog
+    MatLog \
+    NexusLauncherRelease
 
 PRODUCT_COPY_FILES += \
-    device/xiaomi/sdm845-common/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
+    device/xiaomi/sdm845-common/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml \
+    device/xiaomi/sdm845-common/privapp-permissions-com.google.android.apps.nexuslauncher.xml:system/etc/permissions/privapp-permissions-com.google.android.apps.nexuslauncher.xml
 
 # Native libraries whitelist
 PRODUCT_COPY_FILES += \
